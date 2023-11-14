@@ -6,13 +6,13 @@
  * Return: value
  */
 
-int print_rot13(va_list, val)
+int print_rot13(va_list val)
 {
 	int i, q, value = 0;
 	int j = 0;
 	char *s = va_arg(val, char *s);
-	char a[] = {"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"}
-	char b[] = {"nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM"}
+	char a[] = {"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"};
+	char b[] = {"nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM"};
 
 	if (s == NULL)
 		s = "(null)";

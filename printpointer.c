@@ -7,7 +7,7 @@
  *
  */
 
-int print_pointer(va_list, val)
+int print_pointer(va_list val)
 {
 	void *p;
 	void *s = "(nil)";

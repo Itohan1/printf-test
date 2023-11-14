@@ -9,11 +9,11 @@
 typedef struct format
 {
 	char *ph;
-	int (fp)();
+	int (*fp)();
 }Hind;
 int _putchar(char c);
 int _printf(const char *format, ...);
-int printf_char(va_list, val);
+int printf_char(va_list val);
 int printf_string(va_list val);
 int _strlen(char *s);
 int _strlenconst(char *s);
@@ -26,10 +26,10 @@ int print_octa(va_list val);
 int print_hexa(va_list val);
 int print_HEXA(va_list val);
 int print_HEX_more(unsigned int q);
-int print_pointer(va_list, val);
-void print_rev(va_list, val);
-int print_rot13(va_list, val);
-int _printf(const char *format, ...);
+int print_pointer(va_list val);
+void print_rev(va_list val);
+int print_rot13(va_list val);
+int print print_exc_string(va_list val);
 int print_hex_more(unsigned long int i)
 #endif
 

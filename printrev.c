@@ -7,7 +7,7 @@
  *
  */
 
-void print_rev(va_list, val)
+void print_rev(va_list val)
 {
 	int i;
 	int count = 0;

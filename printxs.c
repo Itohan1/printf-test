@@ -6,7 +6,7 @@
  * Return: len
  *
  */
-int print print_exc_string(va_arg, val)
+int print print_exc_string(va_list val)
 {
 	char *s;
 	int i, len = 0;
