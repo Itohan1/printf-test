@@ -27,7 +27,7 @@ Here:
 		{
 			if (h[k].ph[0] == format[i] && h[k].ph[1] == format[i + 1])
 			{
-				len += h[k].function(args);
+				len += h[k].fp(args);
 				i = i + 2;
 				goto Here;
 			}
