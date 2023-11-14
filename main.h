@@ -3,7 +3,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdarg.h>
+#include <limits.h>
+#include <unistd.h>
 
+typedef struct format
+{
+	char *ph;
+	int (fp)();
+}Hind;
 int _putchar(char c);
 int _printf(const char *format, ...);
 int printf_char(va_list, val);
@@ -19,5 +26,10 @@ int print_octa(va_list val);
 int print_hexa(va_list val);
 int print_HEXA(va_list val);
 int print_HEX_more(unsigned int q);
+int print_pointer(va_list, val);
+void print_rev(va_list, val);
+int print_rot13(va_list, val);
+int _printf(const char *format, ...);
+int print_hex_more(unsigned long int i)
 #endif
 

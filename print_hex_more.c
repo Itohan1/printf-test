@@ -1,18 +1,17 @@
 #include "main.h"
 
 /**
- * print_HEXA - convert to hexa
+ * print_hex_more - convert to hexa
  * @val: parameter
  * Return: j
  *
  */
 
-int print_HEXA(va_list val)
+int print_hex_more(unsigned long int i)
 {
 	int i, j = 0;
 	int *array;
-	unsigned int temp = q;
-	unsigned int q = va_arg(val, unsigned int);
+	unsigned long int temp = q;
 
 	while (q / 16 != 0)
 	{
@@ -20,9 +19,9 @@ int print_HEXA(va_list val)
 		j++;
 	}
 	j++;
-	array = malloc(sizeof(int) * counter);
+        array = malloc(sizeof(long int) * counter);
 
-	for (i = 0 ; i < j ; i++)
+        for (i = 0 ; i < j ; i++)
 	{
 		array[i] = temp % 16;
 		temp = temp / 16;
@@ -30,9 +29,9 @@ int print_HEXA(va_list val)
 	for (i = j - 1 ; i >= 0 ; i--)
 	{
 		if (array[i] > 9)
-			array[i] = array[i] + 7;
+			array[i] = array[i] + 39;
 		_putchar(array[i] + '0');
 	}
 	free(array);
-	return (j);
+	return (j)
 }
